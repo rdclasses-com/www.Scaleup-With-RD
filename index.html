@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scale Up With RD</title>
+    
+    <!-- FAVICON -->
+    <link rel="icon" href="https://i.ibb.co/hxycGzQp/edd.png" type="image/png">
+    
+    <!-- LINK TO CSS FILE -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a onclick="switchPage('home')" class="logo">
+            <img src="https://i.ibb.co/mrcn9HKR/kkkkkkkkoooooooo-removebg-preview.png" alt="Scale Up With RD Logo">
+        </a>
+        <ul class="nav-links">
+            <li><a onclick="switchPage('home')">Home</a></li>
+            <li><a onclick="switchPage('home', 'services')">Services</a></li>
+            <li><a onclick="switchPage('gallery')">Gallery</a></li>
+            <li><a onclick="switchPage('about')">About Us</a></li>
+            <li><a onclick="switchPage('home', 'contact')">Contact Us</a></li>
+        </ul>
+        <div class="menu-toggle">☰</div>
+    </nav>
+
+    <!-- CONTAINER 1: LANDING PAGE -->
+    <main id="landing-page">
+        <header id="home" class="hero">
+            <div class="slide active">
+                <img src="https://i.ibb.co/hJCnd77w/Green-White-Minimalist-Gadget-Review-Youtube-Thumbnail.png"=80&w=2564&auto=format&fit=crop" alt="Abstract Glass">
+            </div>
+            <div class="slide">
+                <img src="https://i.ibb.co/kVM2k7Ly/tyty.png" =80&w=2670&auto=format&fit=crop" alt="Technology">
+            </div>
+            <div class="slide">
+                <img src="https://i.ibb.co/rRT1RPQL/ccccc.png" =80&w=2632&auto=format&fit=crop" alt="Meeting">
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Scale Up With RD</h1>
+                <p>Elevating digital experiences with modern design and seamless animation.</p>
+                <a onclick="switchPage('home', 'services')" class="cta-btn">Start Your Journey</a>
+            </div>
+        </header>
+
+        <!-- LIVE OFFER COUNTDOWN -->
+        <div class="offer-bar hidden">
+            <div class="offer-left">
+                <div class="offer-text">
+                    <h3>Last Chance Offer!</h3>
+                    <p>Price increases when timer hits zero.</p>
+                </div>
+                <div class="countdown">
+                    <div class="time-box"><span id="days">00</span><small>Days</small></div>
+                    <div class="time-box"><span id="hours">00</span><small>Hours</small></div>
+                    <div class="time-box"><span id="minutes">00</span><small>Mins</small></div>
+                    <div class="time-box"><span id="seconds">00</span><small>Secs</small></div>
+                </div>
+            </div>
+            <div class="offer-right">
+                <div class="live-dot"></div>
+                <div>
+                    <div class="join-count" id="join-count">2,000+ Students Joined</div>
+                </div>
+            </div>
+        </div>
+
+        <section id="services">
+            <div class="section-header hidden">
+                <h2>Our Services</h2>
+                <p>We provide world-class digital solutions tailored for your growth.</p>
+            </div>
+            <div class="services-grid">
+                <div class="card hidden">
+                    <span class="card-icon">❖</span>
+                    <h3>Mind Mastery</h3>
+                    <p>Building strong, memorable brands using psychology and modern aesthetics.</p>
+                </div>
+                <div class="card hidden">
+                    <span class="card-icon">⚡</span>
+                    <h3>Time Management</h3>
+                    <p>Lightning fast websites built with clean code and smooth user interactions.</p>
+                </div>
+                <div class="card hidden">
+                    <span class="card-icon">🚀</span>
+                    <h3>Goal Achieving</h3>
+                    <p>Data-driven strategies to take your revenue and reach to the next level.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- JOIN COURSE SECTION -->
+        <section id="join-course">
+            <div class="course-container hidden">
+                <!-- Left: Text & List -->
+                <div class="course-content">
+                    <h2>Master Your Life</h2>
+                    
+                    <ul class="course-list">
+                        <li>Time Management</li>
+                        <li>Procrastination Stop</li>
+                        <li>Goal Achieving</li>
+                        <li>Mind Mastery</li>
+                        <li>Discipline Secret</li>
+                    </ul>
+
+                    <!-- Pricing Info -->
+                    <div class="price-wrapper">
+                        <span class="old-price">₹2,999</span>
+                        <span class="new-price">₹599</span>
+                        <span class="discount-badge">Huge Discount - 80% OFF</span>
+                    </div>
+                    
+                    <!-- Urgency Text -->
+                    <p class="urgency-text">⚡ Fast! Limited Seats - Join Fast ⚡</p>
+                    
+                    <!-- Buttons -->
+                    <div class="course-btns">
+                        <a href="#" class="cta-btn">Join Now</a>
+                        <button onclick="shareCourse()" class="share-btn">Share Course 🔗</button>
+                    </div>
+                </div>
+
+                <!-- Right: Image -->
+                <div class="course-image-wrapper">
+                    <img src="https://i.ibb.co/hJCnd77w/Green-White-Minimalist-Gadget-Review-Youtube-Thumbnail.png" alt="Master Your Life">
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT US SECTION -->
+        <section id="about">
+            <div class="section-header hidden">
+                <h2>About Us</h2>
+            </div>
+            <div class="about-container">
+                <div class="about-video hidden">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ScMzIvxBSi4?si=whatIsScaleUp" title="What is Scale Up" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="about-text hidden">
+                    <h3>Our Vision</h3>
+                    <br>
+                    <p>At <strong>Scale Up With RD</strong>, we believe in the power of simplicity. We strip away the noise to focus on your core message.</p>
+                    <p>Our team turns learning into growth —
+and growth into possibility.</p>
+                    <br>
+                    <h4 style="color: #0e4749; margin-bottom: 10px;">Founder: Mr. Sanjay Verma</h4>
+                    <p>With a vision to transform the digital landscape, Mr.Sanjay Verma leads the team with passion and expertise.</p>
+                    <br>
+                    <a onclick="switchPage('about')" class="cta-btn">Read More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS SECTION -->
+        <section class="scrolling-reviews hidden">
+            <div class="section-header">
+                <h2>What People Say</h2>
+                <p>Real feedback from our valued partners.</p>
+            </div>
+            <div class="marquee-container">
+                <div class="marquee-track">
+                    <!-- Cards -->
+                    <div class="review-card"><div class="reviewer-info"><div class="reviewer-avatar">A</div><div class="reviewer-name"><h4>Alex Morgan</h4><span>CEO, TechFlow</span></div></div><p class="review-text">"Scale Up With RD transformed our online presence. The attention to detail is unmatched."</p></div>
+                    <div class="review-card"><div class="reviewer-info"><div class="reviewer-avatar">S</div><div class="reviewer-name"><h4>Sarah Jenkins</h4><span>Founder, Bloom</span></div></div><p class="review-text">"An absolute pleasure to work with. They understood our brand vision perfectly."</p></div>
+                    <div class="review-card"><div class="reviewer-info"><div class="reviewer-avatar">M</div><div class="reviewer-name"><h4>Michael Ross</h4><span>Director, Apex Corp</span></div></div><p class="review-text">"The web animations are smooth and the site is incredibly fast. Highly recommended!"</p></div>
+                    <div class="review-card"><div class="reviewer-info"><div class="reviewer-avatar">P</div><div class="reviewer-name"><h4>Priya Sharma</h4><span>Marketing Head</span></div></div><p class="review-text">"We saw a 40% increase in leads after the redesign. The results speak for themselves."</p></div>
+                    <div class="review-card"><div class="reviewer-info"><div class="reviewer-avatar">D</div><div class="reviewer-name"><h4>David Chen</h4><span>Startup Owner</span></div></div><p class="review-text">"Professional, creative, and timely. They scaled up our business in record time."</p></div>
+                    <div class="review-card"><div class="reviewer-info"><div class="reviewer-avatar">J</div><div class="reviewer-name"><h4>Jessica Lee</h4><span>Creative Lead</span></div></div><p class="review-text">"The design aesthetic is exactly what we needed. Clean, modern, and effective."</p></div>
+                    <div class="review-card"><div class="reviewer-info"><div class="reviewer-avatar">R</div><div class="reviewer-name"><h4>Ryan Cooper</h4><span>Developer</span></div></div><p class="review-text">"Great code quality and easy to maintain. A fantastic technical partner."</p></div>
+                    <!-- Duplicate for Loop -->
+                    <div class="review-card"><div class="reviewer-info"><div class="reviewer-avatar">A</div><div class="reviewer-name"><h4>Alex Morgan</h4><span>CEO, TechFlow</span></div></div><p class="review-text">"Scale Up With RD transformed our online presence. The attention to detail is unmatched."</p></div>
+                    <div class="review-card"><div class="reviewer-info"><div class="reviewer-avatar">S</div><div class="reviewer-name"><h4>Sarah Jenkins</h4><span>Founder, Bloom</span></div></div><p class="review-text">"An absolute pleasure to work with. They understood our brand vision perfectly."</p></div>
+                    <div class="review-card"><div class="reviewer-info"><div class="reviewer-avatar">M</div><div class="reviewer-name"><h4>Michael Ross</h4><span>Director, Apex Corp</span></div></div><p class="review-text">"The web animations are smooth and the site is incredibly fast. Highly recommended!"</p></div>
+                    <div class="review-card"><div class="reviewer-info"><div class="reviewer-avatar">P</div><div class="reviewer-name"><h4>Priya Sharma</h4><span>Marketing Head</span></div></div><p class="review-text">"We saw a 40% increase in leads after the redesign. The results speak for themselves."</p></div>
+                    <div class="review-card"><div class="reviewer-info"><div class="reviewer-avatar">D</div><div class="reviewer-name"><h4>David Chen</h4><span>Startup Owner</span></div></div><p class="review-text">"Professional, creative, and timely. They scaled up our business in record time."</p></div>
+                    <div class="review-card"><div class="reviewer-info"><div class="reviewer-avatar">J</div><div class="reviewer-name"><h4>Jessica Lee</h4><span>Creative Lead</span></div></div><p class="review-text">"The design aesthetic is exactly what we needed. Clean, modern, and effective."</p></div>
+                    <div class="review-card"><div class="reviewer-info"><div class="reviewer-avatar">R</div><div class="reviewer-name"><h4>Ryan Cooper</h4><span>Developer</span></div></div><p class="review-text">"Great code quality and easy to maintain. A fantastic technical partner."</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ SECTION -->
+        <section id="faq">
+            <div class="section-header hidden">
+                <h2>Frequently Asked Questions</h2>
+                <p>Common questions about our services and process.</p>
+            </div>
+            <div class="faq-container hidden">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How do I join the course?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Simply click the "Join Now" button in the "Master Your Life" section. You will be guided to a registration form where you can sign up instantly.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What is RD ScaleUp?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>RD ScaleUp is a personal-growth and skill-building platform designed to help you upgrade your mindset, habits, and productivity.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What skills will I learn?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Time management, discipline, goal-setting, mindset mastery, and how to overcome procrastination.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How can I contact support?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can reach us via the Contact form below, or email us directly at RDclasses021@gmail.com, Mobile Numbe +91- 9717811898 .</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" style="background-color: #eef1f1;">
+            <div class="section-header hidden">
+                <h2>Contact Us</h2>
+                <p>Ready to get started? Let's connect.</p>
+            </div>
+            <div class="contact-split-container hidden">
+                <div class="contact-left">
+                    <form>
+                        <label>Name</label>
+                        <input type="text" placeholder="Your Name">
+                        <label>Email</label>
+                        <input type="email" placeholder="Your Email">
+                        <label>Mobile Number</label>
+                        <input type="tel" placeholder="+91 (555) 000-0000">
+                        <label>Location</label>
+                        <input type="text" placeholder="City, Country">
+                        <label>Message</label>
+                        <textarea rows="4" placeholder="How can we help?"></textarea>
+                        <button type="button" class="cta-btn" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-right-hero">
+                    <img src="https://i.ibb.co/rR4mCFNB/gemini-3-pro-image-preview-nano-banana-pro-a-Modern-productivity-1.png"  ?q=80&w=2073&auto=format&fit=crop" alt="Contact Hero">
+                    <div class="contact-overlay">
+                        <div><h3>Let's Build<br>Something<br>Amazing.</h3></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- CONTAINER 2: GALLERY PAGE (Hidden) -->
+    <div id="gallery-page">
+        <div class="page-header">
+            <h1>Our Portfolio</h1>
+            <p>A visual journey through our latest projects and designs.</p>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item hidden"><img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop"><div class="gallery-overlay"><h3>Web Design</h3></div></div>
+            <div class="gallery-item hidden"><img src="https://images.unsplash.com/photo-1505330622279-bf7d7fc918f4?q=80&w=2070&auto=format&fit=crop"><div class="gallery-overlay"><h3>Branding</h3></div></div>
+            <div class="gallery-item hidden"><img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop"><div class="gallery-overlay"><h3>Marketing</h3></div></div>
+            <div class="gallery-item hidden"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop"><div class="gallery-overlay"><h3>Analytics</h3></div></div>
+            <div class="gallery-item hidden"><img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop"><div class="gallery-overlay"><h3>Team</h3></div></div>
+            <div class="gallery-item hidden"><img src="https://images.unsplash.com/photo-1558655146-d09347e0b7a9?q=80&w=2070&auto=format&fit=crop"><div class="gallery-overlay"><h3>Mobile App</h3></div></div>
+        </div>
+    </div>
+
+    <!-- CONTAINER 3: FULL ABOUT PAGE (Hidden) -->
+    <div id="about-page">
+        <div class="page-header">
+            <h1>Who We Are</h1>
+            <p>The story behind Scale Up With RD.</p>
+        </div>
+        <div class="about-details hidden">
+            <p>We founded <strong>Scale Up With RD</strong> with a singular mission: to simplify the digital landscape for growing businesses. What started as a small team of two has grown into a full-service agency dedicated to perfection.</p>
+            <br>
+            <p>RD ScaleUp is a forward-thinking personal development and skill-building platform dedicated to empowering individuals with the mindset, tools, and strategies they need to excel in today’s fast-moving world.
+We are a team of experienced educators, performance coaches, and training specialists who share a common purpose: to simplify growth and make transformation accessible to everyone.
+
+At RD ScaleUp, we believe that success is not a matter of luck — it is the result of clear habits, disciplined actions, and a powerful mindset. Our programs are thoughtfully designed to bridge the gap between knowledge and real-world application, ensuring that learners not only understand concepts but are able to implement them effectively.
+
+What Defines Us
+
+Expert-Driven Approach: Every session, module, and strategy is crafted by professionals with deep experience in skill development, behavioral training, and personal growth.
+
+Practical Learning: We focus on real, actionable techniques that can be applied immediately in academic, personal, and professional life.
+
+Human-Centered Guidance: Our team emphasizes supportive mentoring, helping individuals overcome challenges like procrastination, distraction, and lack of discipline.
+
+High Standards of Excellence: We continuously refine our programs to maintain quality, clarity, and measurable impact for every learner.
+
+A Growth-Focused Culture: We don’t just teach skills—we cultivate confidence, resilience, and a long-term success mindset.
+
+Our Commitment
+
+RD ScaleUp is committed to creating meaningful learning experiences that lead to long-lasting transformation.
+We aim to empower students, professionals, and individuals from all backgrounds to elevate their performance, achieve their goals, and unlock their true potential.
+
+Our Purpose
+
+To build a space where growth is not complicated —
+it is structured, guided, and achievable for everyone</p>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <img src="https://i.ibb.co/mrcn9HKR/kkkkkkkkoooooooo-removebg-preview.png" alt="Logo" class="footer-logo-img">
+                <p class="footer-desc">Empowering businesses with modern design and scalable digital strategies. Join us on the journey to excellence.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon"></a>
+                    <a href="#" class="social-icon">IG</a>
+                    <a href="#" class="social-icon">WS</a>
+                    
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a onclick="switchPage('home')">Home</a></li>
+                    <li><a onclick="switchPage('about')">About Us</a></li>
+                    <li><a onclick="switchPage('gallery')">Portfolio</a></li>
+                    <li><a onclick="switchPage('home', 'contact')">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">Time Management</a></li>
+                    <li><a href="#">Procrastination Stop</a></li>
+                    <li><a href="#">Goal Achieving</a></li>
+                    <li><a href="#">Mind Mastery</a></li>
+                    <li><a href="#">Discipline Secret</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <p style="color:#d1d1d1; font-size:0.9rem; margin-bottom:15px;">Subscribe to get the latest updates.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email">
+                    <button type="button">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025Scale Up With RD. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- LINK TO JS FILE -->
+    <script src="script.js"></script>
+</body>
+</html>
